@@ -1,0 +1,756 @@
+/*
+Theme Name: SSR Nesar
+Theme URI:
+Author: nesar
+Author URI: http://technohutbd.com
+Description: SSR Nesar Template
+Version: 1.0.0
+*/
+/*
+*****************************
+    01. Common css
+*****************************
+  */
+
+body {
+    background: url(../img/header-pattern.png) !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+.pageHeader {
+    background: url(../img/pageHeader.png) !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-color: #009600;
+    opacity: .5; */
+
+}
+
+/*
+*****************************
+    02. Header css
+*****************************
+*/
+
+.header-top-area {
+    background: #232323 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header-top-area a {
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+
+}
+
+.header-left-content a {
+    padding-left: 0;
+    padding-right: 30px;
+}
+
+.header-left-content a i {
+    margin-right: 4px;
+}
+
+.header-right-content {
+    text-align: right;
+}
+
+.header-right-content i {
+    font-size: 17px;
+    color: #009600;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+/*.header-right-content .btn-success {*/
+/*    color: #fff;*/
+/*    background-color: #85cc66;*/
+/*    border-color: #85cc66;*/
+/*}*/
+
+.header-top-area a.header-right-btn {
+    border: medium none;
+    border-radius: 2px;
+    margin-left: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-transform: none;
+    position: relative;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 1;
+
+}
+
+.header-top-area a.header-right-btn:hover {
+    background-color: #fff;
+    color: #5aa938;
+    font-weight: bold;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.header-bottom-area {
+    background: #f2f2f2 none repeat scroll 0 0;
+
+}
+
+#sticker {
+    z-index: 999 !important;
+}
+
+.hvr-underline-from-left:before {
+    background: #009600;
+    height: 2px;
+}
+
+/********  Nav bottom shadow *****/
+.floatingNav {
+    width: 100%;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 10px #999;
+    -moz-box-shadow: 0 1px 10px #999;
+    box-shadow: 0 1px 10px #999;
+}
+
+/*menu css*/
+.navbar {
+    padding: 0;
+}
+
+.navbar-brand img {
+    width: 80px;
+    height: 80px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #009600 !important;
+    font-weight: bold;
+}
+
+.dropdown-item {
+    color: #009600 !important;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    padding: 0;
+}
+
+.dropdown-item {
+    padding: 0.70rem 1.5rem;
+}
+
+.dropdown-item:active {
+    background-color: #fff;
+}
+
+.dropdown-item .hvr-underline-from-left:before {
+    background: #009600;
+    height: 2px;
+}
+
+.navbar-nav li:hover .dropdown-menu {
+    display: block;
+}
+
+/* rotate caret on hover */
+.dropdown-menu>li>a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2385cc66' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2385cc66' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-indicators li {
+    background-color: #85cc66;
+}
+
+.sticky-offset {
+    top: 56px;
+}
+
+/*
+*****************************
+    03. TopScroll Marquee
+*****************************
+*/
+#topMarquee {
+    margin-top: 10px;
+}
+
+.topMarquee {
+    color: #009600;
+    font-weight: 700;
+}
+
+.marquee {
+    padding-top: 5px;
+    font-size: 14px;
+    width: 100%;
+    line-height: 30px;
+    background-color: #ddd;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/*
+*****************************
+    04. Service-box css
+*****************************
+*/
+
+.educare-service-box {
+    background: url(../img/exper-teacher.jpg);
+    background-size: cover;
+    color: #fff;
+    display: block;
+    margin-bottom: 50px;
+    padding: 20px;
+    position: relative;
+    z-index: 9;
+    transition: .3s;
+    background-position: 0 0;
+}
+
+.educare-service-box::after {
+    background: #5aa938 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.95;
+    position: absolute;
+    top: 0;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+    z-index: -1;
+}
+
+.service-box-inner {
+    border: 1px dashed #fff;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+
+.educare-service-box a {
+    color: #fff;
+
+}
+
+.service-box-inner h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.educare-service-box-image {
+    margin-bottom: 20px;
+}
+
+.educare-service-box-content p:last-child {
+    margin-bottom: 0;
+}
+
+.educare-service-box:hover::after {
+    background-color: #000;
+    opacity: .9;
+}
+
+.educare-service-box:hover .service-box-inner {
+    border-color: #5aa938;
+    color: #fff;
+}
+
+.educare-service-box:hover {
+    background-size: 150% auto;
+    background-position: center center;
+}
+
+.educare-service-box-image img {
+    max-height: 65px;
+    width: auto;
+}
+
+.educare-service-box-image i.fa {
+    font-size: 65px;
+}
+
+
+/*
+*****************************
+    05. Department CSS
+*****************************
+*/
+.department {
+    background-color: #fff;
+}
+
+.educare-section-title {
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+.educare-section-title h2 {
+    font-size: 34px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #009600;
+}
+
+.educare-section-title p {
+    font-size: 20px;
+}
+
+.dep {
+    text-align: center;
+}
+
+.dep a {
+    text-decoration: none;
+}
+
+.dep img {
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+
+.dep img:hover {
+    border-radius: 5px;
+}
+
+.dep h3 {
+    color: #404040;
+    text-transform: uppercase;
+}
+
+.line {
+    display: block;
+    margin-top: 15px;
+    width: 30px;
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.electrical {
+    background-color: #84bb26;
+}
+
+.computer {
+    background-color: #EB1D37;
+}
+
+.civil {
+    background-color: #FBB501;
+}
+
+.telcom {
+    background-color: #0065BA;
+}
+
+.mechanical {
+    background-color: #c50083;
+}
+
+.electronics {
+    background-color: #990000;
+}
+
+/****   Notice *****/
+.allNotice {
+    background-color: #F6F6F9;
+    ;
+}
+
+.allNotice h2 {
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #009600;
+    text-align: center;
+}
+
+.hrNotice {
+    margin-bottom: 30px;
+    border-top: 2px solid #009600;
+    box-shadow: 0 1px 0 red;
+}
+
+.dateTime {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #05305A;
+    text-align: left;
+    line-height: 0px;
+}
+
+.shortNotice {
+    font-size: 14px;
+    color: #05305A;
+    text-align: left;
+}
+
+.notice hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid #F8D24B;
+}
+
+/*
+*****************************
+    05. Owl-Carouse CSS
+*****************************
+*/
+
+#messages {
+    background-color: #f1f1f1;
+
+}
+
+#messages .messageTitle h2 {
+    font-size: 34px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #009600;
+}
+
+#messages .messageTitle h2:after {
+    content: "";
+    height: 4px;
+    width: 144px;
+    background-color: rgb(251, 181, 1);
+    position: absolute;
+    top: 50px;
+    left: 15px;
+}
+
+.owl-carousel .owl-item img {
+    position: relative;
+    width: 85%;
+    max-height: 280px !important;
+    margin: auto auto;
+}
+
+
+.card-img-overlay {
+    position: absolute;
+    top: 158px;
+    right: 0;
+    bottom: 195px;
+    left: 0;
+    background-color: #fff;
+    opacity: .5;
+    padding: 0;
+    text-align: center;
+}
+
+.card-img-overlay h4,
+h6 {
+    color: #000;
+    font-weight: 700;
+
+}
+
+/*
+*****************************
+    06. link CSS
+*****************************
+*/
+#link {
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.important-link {}
+
+#link {
+    background: url(../img/books-wallpaper.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*background: #f2f2f2; */
+    color: #FFF;
+}
+
+.important-link img {
+    width: 100px;
+    height: 100px;
+}
+
+/*
+*****************************
+    07. Footer CSS
+*****************************
+*/
+.footer-head {
+    background-color: #232323;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.address h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.address-nav {
+    margin-left: -30px;
+}
+
+.nav-bar-footer h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.address-nav ul {
+    margin-left: -20px;
+}
+
+.address-nav li {
+    list-style: none;
+}
+
+.nav-bar-footer ul {
+    margin-left: -20px;
+}
+
+.nav-bar-footer ul li a {
+    color: #fff;
+}
+
+.footer-footer {
+    background-color: #131313;
+    color: #ccc;
+    font-size: 12px;
+}
+
+.develop-by a {
+    color: #fff;
+}
+
+/*
+*****************************
+    08. Single Notice CSS
+*****************************
+*/
+
+#singleNotice .container {
+    background-color: #FFF;
+}
+
+.singleNotice h2 {
+    color: #009600;
+    font-weight: 700;
+}
+
+.singleNotice h4 {
+    color: #000;
+}
+
+.singleNotice .noticeDetails {
+    color: #000;
+}
+
+.singleNotice img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+/*
+*****************************
+    09. Album
+*****************************
+*/
+
+.photoAlbum {
+    background-color: #fff;
+}
+
+.photoAlbum h2 {
+    color: #009600;
+    font-weight: 700;
+}
+
+.card-img-top {
+    height: 200px !important;
+}
+
+.card-title {
+    color: #009600;
+}
+
+.card-body {
+    padding: .5rem;
+
+}
+
+.photoAlbum a {
+    text-decoration: none;
+}
+
+.breadcrumb {
+    background-color: #fff;
+
+}
+
+/*
+*****************************
+    10. Gallery
+*****************************
+*/
+
+.photoGallery {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.pageHeader h2 {
+    padding-top: 16px;
+    color: #fff;
+    font-weight: 700;
+    /* text-shadow: 2px 2px #009600; */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+}
+
+/*
+*****************************
+    11. Contact Us
+*****************************
+*/
+
+.contactUs {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.pageHeader h2 {
+    padding-top: 16px;
+    color: #fff;
+    font-weight: 700;
+    /* text-shadow: 2px 2px #009600; */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+
+}
+
+/*
+*****************************
+    12. About Us
+*****************************
+*/
+
+.aboutUs,
+.vocational,
+.onlineApplication {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.aboutHeader {
+    color: #000;
+    position: relative;
+}
+
+.aboutHeader h3::after {
+    content: "";
+    height: 4px;
+    width: 100px;
+    background-color: #4aa52d;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+}
+
+.mission {
+    padding-left: 5px;
+}
+
+.title-info-about {
+    position: relative;
+}
+
+.title-info-about h4::after {
+    content: "";
+    height: 4px;
+    width: 50px;
+    background-color: #4aa52d;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.vision p,
+.mission p {}
+
+.english {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.bangla {
+    font-size: 16px;
+    margin-top: 20px;
+
+}
+.educare-service-box a:hover {
+    text-decoration: none;
+}
+
+.fzindex {
+    z-index: 1111;
+    position: sticky;
+    background: #F2F2F2;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+.d-grid {
+    display: grid;
+}
+.bg-green {
+    background-color: #009600;
+}
+.nav-pills a {
+    color: #009600;
+}
