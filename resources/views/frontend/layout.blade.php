@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
     <title>@yield('title')</title>
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset("assets/img/favicon.png") }}">
     <meta name="msapplication-TileColor" content="#ffffff">
