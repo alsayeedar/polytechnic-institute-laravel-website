@@ -16,6 +16,10 @@ cd polytechnic-institute-laravel-website
 ```
 cp .env.example .env
 ```
+- Install composer
+```
+composer i
+```
 - Generate key
 ```
 php artisan key:generate
