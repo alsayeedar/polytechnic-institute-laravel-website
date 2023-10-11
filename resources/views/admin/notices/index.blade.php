@@ -54,9 +54,7 @@
                                 <td class="text-center"><span class="badge {{ $notice->is_published ? "bg-success" : "bg-danger" }}">{{ $notice->is_published ? "Published" : "Unpublished" }}</span></td>
                                 <td class="text-center">
                                     <div class="btn-group" role="group" aria-label="Action Button">
-                                        @if ($notice->is_published)
-                                        <a target="_blank" href="{{ route("frontend.notice.show", $notice->id) }}" class="btn btn-success">View</a>
-                                        @endif
+                                        <a target="_blank" href="{{ $notice->is_published ? route("frontend.notice.show", $notice->id) : "" }}" class="btn btn-success {{ $notice->is_published ? "" : "disabled" }}">View</a>
                                         <a href="{{ route("admin.notices.edit", $notice->id) }}" class="btn btn-primary">Edit</a>
                                         <button type="button" class="btn btn-danger" onclick="confirm('Are you sure?') ? location.href = '{{ route('admin.notices.delete', $notice->id) }}' : ''">Delete</button>
                                     </div>
