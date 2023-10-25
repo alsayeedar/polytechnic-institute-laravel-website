@@ -2,6 +2,26 @@
 
 A Web Application for Polytechnic Institute using Laravel 10
 
+## Features
+- Responsive Design
+- Dynamic Image Slider
+- Notice Board
+- Dynamic Pages, Technologies
+- Dynamic header, footer menu
+- etc.
+
+## Screenshots
+<p align="center" width="100%">
+    <img width="30%" src="https://raw.githubusercontent.com/alsayeedar/polytechnic-institute-laravel-website/master/Screenshots/Screenshot_1.png"/>
+    <img width="30%" src="https://raw.githubusercontent.com/alsayeedar/polytechnic-institute-laravel-website/master/Screenshots/Screenshot_2.png"/>
+    <img width="30%" src="https://raw.githubusercontent.com/alsayeedar/polytechnic-institute-laravel-website/master/Screenshots/Screenshot_3.png"/>
+</p>
+<p align="center" width="100%">
+    <img width="30%" src="https://raw.githubusercontent.com/alsayeedar/polytechnic-institute-laravel-website/master/Screenshots/Screenshot_4.png"/>
+    <img width="30%" src="https://raw.githubusercontent.com/alsayeedar/polytechnic-institute-laravel-website/master/Screenshots/Screenshot_5.png"/>
+    <img width="30%" src="https://raw.githubusercontent.com/alsayeedar/polytechnic-institute-laravel-website/master/Screenshots/Screenshot_6.png"/>
+</p>
+
 ## Installation
 
 - Clone this repository
